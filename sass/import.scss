@@ -1,0 +1,9 @@
+/* @import 导入其他的scss文件，不过每导入一次文件，就会发起一次http请求。
+    每一小部分是一个partial，代表一个模块，可以让项目更有条理。partial文件前面加一个_,如_base.scss
+    代表这是partail文件，不能用作单独使用，只能导入使用。
+    导入时： @import "文件名" 如：@import "base";,没有下划线，没有文件后缀。
+*/
+@import "base";
+.box{
+    color:red;
+}

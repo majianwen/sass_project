@@ -1,0 +1,23 @@
+/* 继承的写法使用 @extend 写法 */
+
+.app {
+  margin: 20px;
+}
+.app-content {
+  @extend .app;
+  font-size: 20px;
+  font-weight: 230;
+}
+/* 2.继承还有可以继承当前选择器的子类选择器,会到自己的下面来啊 */
+
+.box {
+  color: #fff;
+}
+.box a {
+  font-size: 12px;
+}
+
+.box-content {
+  @extend .box;
+  border: 1px solid red;
+}

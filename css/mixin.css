@@ -1,0 +1,46 @@
+@charset "UTF-8";
+/* mixin的使用模板
+    @mixin 名字 (参数1 , 参数2){
+        ...
+    }
+
+*/
+/* 1.正常使用 */
+.alert-warning {
+  color: red;
+  background: azure;
+  /*这里alert后面没有参数的时候，有没有括号都可以，但是有参数的时候不行 */
+}
+
+/* 2.mixin嵌套使用显示，mixin还可以使用嵌套的写法，嵌套的也会显示出来 */
+.show-mess {
+  color: yellow;
+}
+
+.show-mess a {
+  color: orange;
+}
+
+/* 3.mixin参数使用情况,就当成函数传参使用就行 */
+/* 当没有指定参数名称的时候，参数的顺序不能改变 */
+.box-mess {
+  color: red;
+  background: #ffff;
+}
+
+.box-mess a {
+  /* 这里使用的darken函数，自动生成颜色深10%的值 */
+  color: #cc0000;
+}
+
+/* 当参数名指定的时候，参数的顺序没有那么重要了 */
+.box-info {
+  color: #434fdd;
+  background: yellow;
+}
+
+.box-info a {
+  /* 这里使用的darken函数，自动生成颜色深10%的值 */
+  color: #2431c9;
+}
+/*# sourceMappingURL=mixin.css.map */

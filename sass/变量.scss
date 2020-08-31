@@ -1,0 +1,25 @@
+//变量$+变量名：value这样的格式来书写
+//1. 变量有两种他，一种是全局变量，一旦定义所有地方都可以使用
+
+$primary-bgcolor: #000000;
+$primary-color: red;
+
+.header {
+  background: $primary-bgcolor;
+  color: $primary-color;
+}
+//2.还有一种是局部变量，只有在当前块级作用域中使用，外部不能使用。
+.footer {
+  $footer-color: yellow;
+  color: $footer-color;
+}
+.content {
+  font-size: 10px;
+  // color: $footer-color; //Undefined variable: "$footer-color".
+}
+//3.变量也可以嵌套使用，并且定义多个变量,中间用空格隔开
+$primary-border: 1px solid $primary-color;
+
+.content-border {
+  border: $primary-border;
+}

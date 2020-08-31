@@ -1,0 +1,17 @@
+.header {
+  background: #000000;
+  color: red;
+}
+
+.footer {
+  color: yellow;
+}
+
+.content {
+  font-size: 10px;
+}
+
+.content-border {
+  border: 1px solid red;
+}
+/*# sourceMappingURL=变量 copy.css.map */

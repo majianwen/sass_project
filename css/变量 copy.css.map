@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAMA,AAAA,OAAO,CAAC;EACN,UAAU,EAJM,OAAO;EAKvB,KAAK,EAJS,GAAG;CAKlB;;AAED,AAAA,OAAO,CAAC;EAEN,KAAK,EADU,MAAM;CAEtB;;AACD,AAAA,QAAQ,CAAC;EACP,SAAS,EAAE,IAAI;CAEhB;;AAID,AAAA,eAAe,CAAC;EACd,MAAM,EAHS,GAAG,CAAC,KAAK,CAhBV,GAAG;CAoBlB",
+    "sources": [
+        "../sass/变量 copy.scss"
+    ],
+    "names": [],
+    "file": "变量 copy.css"
+}

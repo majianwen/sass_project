@@ -1,0 +1,57 @@
+.nav {
+  font-size: 10px;
+  ul {
+    height: 30px;
+    width: 100%;
+    li {
+      margin-top: 10px;
+      margin-left: 20px;
+    }
+    //当想直接使用父类的名字的时候，使用& ji即可，&就代表父类的选择器。对于伪类的写法
+    // 尤其需要注意
+    &:hover {
+      color: red;
+    }
+    .content {
+      font-weight: bold;
+      &-text {
+        font-size: 12px;
+        color: #fff;
+      }
+    }
+  }
+}
+
+/* 属性嵌套使用
+    当属性中含有相同的前缀的时候可以使用属性的嵌套使用，写法是前缀：等价于前缀-。
+    比如下面的改造
+*/
+
+.app {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  font-size: large;
+}
+/* 改造为下面的写法 */
+.app_1 {
+  font: {
+    family: 'Courier New', Courier, monospace;
+    weight: bold;
+    size: large;
+  }
+}
+/* 第二个属性嵌套的例子
+    就是可以留一条样式在外面，里面继续属性嵌套
+*/
+.box {
+  border: 1px solid red;
+  border-right-style: blue;
+  border-left: 20px;
+}
+/* 改造为下面 */
+.box1 {
+  border: 1px solid red {
+    right-style: blue;
+    left: 20px;
+  }
+}

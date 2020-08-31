@@ -1,0 +1,61 @@
+@charset "UTF-8";
+.nav {
+  font-size: 10px;
+}
+
+.nav ul {
+  height: 30px;
+  width: 100%;
+}
+
+.nav ul li {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.nav ul:hover {
+  color: red;
+}
+
+.nav ul .content {
+  font-weight: bold;
+}
+
+.nav ul .content-text {
+  font-size: 12px;
+  color: #fff;
+}
+
+/* 属性嵌套使用
+    当属性中含有相同的前缀的时候可以使用属性的嵌套使用，写法是前缀：等价于前缀-。
+    比如下面的改造
+*/
+.app {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  font-size: large;
+}
+
+/* 改造为下面的写法 */
+.app_1 {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  font-size: large;
+}
+
+/* 第二个属性嵌套的例子
+    就是可以留一条样式在外面，里面继续属性嵌套
+*/
+.box {
+  border: 1px solid red;
+  border-right-style: blue;
+  border-left: 20px;
+}
+
+/* 改造为下面 */
+.box1 {
+  border: 1px solid red;
+  border-right-style: blue;
+  border-left: 20px;
+}
+/*# sourceMappingURL=嵌套.css.map */
